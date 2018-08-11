@@ -1,0 +1,31 @@
+body {
+  background: url('weather2.jpg') no-repeat rgb(30,30,30) fixed center center;
+      background-size: contain;
+      color:white;
+}
+#content{
+  margin:0;
+  padding:0;
+  display:grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 200px 150px 200px;
+  grid-template-areas: "header header"
+                        "section section"
+                        "main main";
+}
+
+header{
+  align-self: center;
+  justify-self: center;
+  grid-area: header;
+
+}
+section{
+  justify-self:center;
+  grid-area: section;
+}
+main{
+  align-self:center;
+  justify-self:center;
+  grid-area: main;
+}
